@@ -1,0 +1,48 @@
+/* remove arrows/spinners from input type number */
+/* Chrome, Safari, Edge, Opera */
+
+input.custom-number-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input.custom-number-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input.custom-number-input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.custom-number-input-container {
+  display: flex;
+  align-items: stretch;
+  border-radius: 3px;
+  border: 1px solid rgb(200, 200, 200);
+}
+
+.custom-number-input-addon-before {
+  /* padding: 10px; */
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(240, 246, 249);
+  font-weight: 500;
+  color: rgb(180, 180, 180);
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.custom-number-input {
+  flex: 1;
+  padding: 10px;
+  padding-right: 40px;
+  border: none;
+  text-align: center;
+  font-size: 15px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
